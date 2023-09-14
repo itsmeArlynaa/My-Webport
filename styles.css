@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+  }
+nav{
+    width: 37%;
+    color: #000;
+    box-shadow: rgba(0, 195, 255, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 0;
+    padding: 10px;
+    transition: transform 0.1s;
+}
+
+nav:hover {
+    transform: scale(1.3);
+}
+nav li{
+    display: inline;
+    color: black;
+    margin-right: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+nav a{
+    text-decoration: none;
+}
+a:hover {
+    color: #030303; /* Change text color on hover */
+    transform: translateY(-5px);
+  }
+.arlyn{
+    text-align: center;
+    padding-top: 8%;
+    height: 100vh;
+}
+.arlyn h2{
+    font-size: 50px;
+}
+.arlyn h1{
+    font-size: 80px;
+    margin-bottom: 3%;
+    color: #54b3d6;
+}
+.arlyn img{
+    width: 70px;
+    margin-right: 50px;
+    transition: transform 0.1s;
+}
+.arlyn img:hover {
+    transform: scale(1.5);
+}
+.linkedin img{
+    width: 60px;
+}
+.navigation a{
+  color: #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.navigation a:hover {
+    box-shadow: inset 100px 0 0 0  rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+ 
+.wrapper{
+    width: 100%;
+    display: flex;
+    
+}
+.aboutMe{
+    float: left;
+    width: 48%;
+    margin-left: 10rem; 
+    margin-right: 4rem;
+    margin-top: 1rem;
+   
+}
+
+h1  img{
+    width: 50px;
+    margin-right: 10px;
+}
+.aboutMe h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    margin-top: 90px;
+}
+.aboutMe p{
+    font-size: 20pxpx;
+}
+.aboutMePic{
+    float: right;
+    width: 50%;
+}
+.aboutMePic img{
+    width: 500px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+}
+.wrap{
+  height: 70vh;
+  margin-bottom: 200px;
+}
+.wrapper{
+  height: 80vh;
+  margin-bottom: 200px;
+}
+.highlights{
+    text-align: center;
+    margin-top: 1%; 
+   
+}
+.highlights h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.highlights p{
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    margin-left: 50px;
+}
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s;
+    margin-top: 50px;
+  }
+  .card:hover {
+    transform: scale(1.2); /* Increase scale by 10% on hover */
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .specialized h1 {
+    font-size: 50px;
+  }
+  .specialized img{
+    width: 100px;
+    margin-right: 50px;
+    transition: 0.5s;
+  }
+  .specialized {
+   text-align: center;
+   
+  }
+  .wrapper1{
+    height: 50vh;
+  }
+  .specialized p{
+    font-size: 20px;
+   
+  }
+  .specialized img:hover {
+    transform: scale(1.3);
+}
+  .cards{
+    text-align: center;
+  }
+  .card img{
+    height: 150px;
+  }
+.specialized h1 img{
+    margin-right: 10px;
+    width: 70px;
+}
+/* Style for the element with line below */
+.element-with-line {
+    position: relative;
+    padding-bottom: 20px; /* Add space for the line */
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+  }
+  
+  .element-with-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 71%;
+    height: 7px; /* Height of the line */
+    background-color: #54b3d6; /* Line color */
+    margin-bottom: 50px;
+   
+
+  }
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #54b3d6;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.moon-icon img{
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 7px;
+}
+.sun-icon img{
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 7px;
+}
+.cards2{
+  text-align: center;
+}
+.card2 img{
+  height: 100px;
+  width: 100px;
+  padding-top: 10px;
+}
+.cards2{
+  display: flex;
+  margin-left: 50px;
+}
+.card2 {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  margin-top: 50px;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+}
+.cards2{
+  margin-bottom: 10%;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(15, 184, 196, 0.75);;
+}
+
+.card2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card2:hover {
+  transform: scale(1.2); /* Increase scale by 10% on hover */
+}
+.switch{
+  margin-top: 10px;
+  float: right;
+}
+/* Default styles for all screen sizes */
+.container {
+  /* Your default styles here */
+}
+
+/* Responsive styles for screens up to 600px */
+@media (max-width: 600px) {
+  .container {
+      
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+
+  }
+}
+
+@media (max-width: 600px) {
+  .arlyn h2 {
+      font-size: 30px;
+  }
+  .arlyn h1 {
+      font-size: 50px;
+  }
+  .arlyn img {
+      width: 40px;
+  }
+  /* Adjust other styles as needed */
+  
+  /* About Me Section */
+  .aboutMe {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      
+  }
+  .aboutMe h1 {
+      font-size: 40px;
+      padding-top: 40px;
+  }
+  .aboutMePic img {
+      width: 70%;
+      max-width: 300px;
+  }
+  
+  /* Highlight Projects */
+  .cards, .cards2{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .card {
+      width: 90%;
+      margin: 10px;
+  }
+  
+  /* Specialized Skills */
+  .specialized h1 {
+      font-size: 40px;
+  }
+  .specialized img {
+      width: 60px;
+      margin-right: 10px;
+  }
+  
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+.aboutMe {
+  width: 45%;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.aboutMePic {
+  width: 45%;
+}
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
+  .wrapper {
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .aboutMe, .aboutMePic {
+      width: 90%;
+      margin: 0 auto;
+      
+  }
+  
+  .aboutMe {
+      margin-top: 20px;
+  }
+  .aboutMePic img{
+    width: 500px;
+   margin-left: 50px;
+   
+  }
+  
+}
+/* Default styles for all screen sizes */
+.element-with-line {
+  position: relative;
+  padding-bottom: 20px; /* Add space for the line */
+  justify-content: center;
+  align-items: center;
+  margin-left: 22%;
+}
+
+.element-with-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 71%;
+  height: 7px; /* Height of the line */
+  background-color: #54b3d6; /* Line color */
+  margin-bottom: 50px;
+}
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
+  .element-with-line {
+    margin-top: 50px;
+      margin-left: 20px; /* Center the element */
+      text-align: center;
+  }
+  
+  .element-with-line::after {
+      width: 90%; /* Adjust the line width */
+  }
+}
+.resume{
+  border: 2px solid ;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 10px;
+  margin: auto;
+  text-decoration: none;
+  transition: 0.5s;
+  
+}
+.arlyn img{
+  margin-bottom: 100px;
+}
+.resume a{
+  text-decoration: none;
+  color: unset;
+ 
+}
+
+.resume:hover {
+  transform: scale(1.2);
+}
+a{
+  text-decoration: none;
+  color:unset;
+}
+.wrapper1{
+  margin-bottom: 200px;
+}

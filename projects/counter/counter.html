@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        
+        
+       .container{
+        display: flex;
+        border: 1px black;
+        
+       }
+       h1{
+        margin-top: 5%;
+       }
+       #counter{
+        font-size: 150px;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 2px 2px #585656;
+       }
+       button{
+        width: 50px;
+        border: none;
+        height: 50px;
+        border-radius: 10px;
+        margin: auto;
+        
+       }
+       #decrementBtn {
+        background-color: red;
+        color: white;
+       }
+       #incrementBtn {
+        background-color: green;
+        color: white;
+       }
+       h1, h2{
+        color: black;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>My First JavaScript Project</h1>
+    <h2>0-1000 Counter</h2>
+    </div>
+    <div class="container">
+        <button id="decrementBtn">-</button>
+        <p id="counter">0</p>
+        <button id="incrementBtn">+</button>
+    </div>
+   <script>
+        const decrementBtn = document.getElementById("decrementBtn");
+        const counterElement = document.getElementById("counter");
+        const incrementBtn = document.getElementById("incrementBtn");
+
+        let counterValue = 0;
+
+        incrementBtn.addEventListener('click', function(){
+            if (counterValue < 1000){
+                counterValue++;
+                counterElement.textContent = counterValue;
+            }
+        });
+
+        decrementBtn.addEventListener('click', function(){
+            if (counterValue > 0){
+                counterValue--;
+                counterElement.textContent = counterValue;
+            }
+        });
+    
+   </script>
+
+</body>
+</html>
